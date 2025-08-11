@@ -1,72 +1,53 @@
-# 🧠 Emoji Memory Game
+# 🧠 Emoji Memory Game <br>
 
-A simple and fun **Memory Matching Game** built with **HTML, CSS, and JavaScript**.  
-Match all emoji pairs before the timer runs out!  
-
----
-
-## 🎯 Features
-- 5×10 grid with 25 emoji pairs
-- Timer countdown (120 seconds)
-- Click 2 cards to reveal emojis
-- Matching pairs disappear
-- Win or lose message at the end
-- Runs on any browser
+A simple and fun <b>Memory Matching Game</b> built with <b>HTML, CSS, and JavaScript</b>. <br>
+Your goal: match all emoji pairs before the timer runs out! <br><br>
 
 ---
 
-## 📂 Project Structure
+## 🎯 Features <br>
+- 🎲 <b>5×10 grid</b> with 25 emoji pairs (50 cards total) <br>
+- ⏳ <b>Timer countdown</b> (120 seconds to finish) <br>
+- 🖱 <b>Click 2 cards</b> to reveal emojis <br>
+- ✅ Matching pairs disappear <br>
+- 📢 <b>Win or lose message</b> displayed at the end <br>
+- 🌐 Works in <b>any modern browser</b> <br><br>
 
+---
 
+## 📂 Project Structure <br>
+
+<pre>
 memory-game/
-├── index.html # Game layout
-├── style.css # Game styling
-├── script.js # Game logic
-└── README.md # Instructions
+├── index.html   # Game layout
+├── style.css    # Game styling
+├── script.js    # Game logic
+└── README.md    # Instructions
+</pre>
+<br>
 
+---
 
+## 🚀 How to Run Locally <br>
 
-2️⃣ Install Python 3 (if not already installed)
-Amazon Linux:
+<b>1️⃣ Clone the Repository</b> <br>
+```bash
+git clone https://github.com/yourusername/memory-game.git
+cd memory-game
+``` <br>
+
+<b>2️⃣ Install Python 3 (if not already installed)</b> <br>
+Amazon Linux: <br>
+```bash
 sudo yum install python3 -y
 
-Ubuntu/Debian:
-sudo apt update && sudo apt install python3 -y
 
-Check Version:
 python3 --version
+``` <br>
 
-3️⃣ Start a Local Web Server
+<b>3️⃣ Start a Local Web Server</b> <br>
+```bash
 python3 -m http.server 8080
+``` <br>
 
-
-
-☁️ Running on AWS EC2
-1️⃣ SSH into EC2 Instance
-ssh -i your-key.pem ec2-user@your-ec2-public-ip
-2️⃣ Install Python 3
-sudo yum install python3 -y         # Amazon Linux
-sudo apt update && sudo apt install python3 -y   # Ubuntu
-3️⃣ Upload Files to Server
-You can use scp from your local machine:
-scp -i your-key.pem -r memory-game ec2-user@your-ec2-public-ip:/home/ec2-user/
-4️⃣ Run the Server
-cd /home/ec2-user/memory-game
-python3 -m http.server 8080
-5️⃣ Allow Port 8080 in AWS Security Group
-Go to AWS Console → EC2 → Security Groups
-Edit inbound rules → Add:
-Type: Custom TCP
-ort Range: 8080
-Source: 0.0.0.0/0
-6️⃣ Access in Browser
-http://<your-ec2-public-ip>:8080
-🛠 Technologies Used
-HTML5
-
-CSS3
-
-JavaScript (Vanilla JS)
-
-Python HTTP Server (for local hosting)
-
+<b>4️⃣ Open in Browser</b> <br>
